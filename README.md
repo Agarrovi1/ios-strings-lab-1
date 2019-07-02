@@ -350,13 +350,13 @@ let input = "Count how many vowels I have!"
 
 var vowelCount = 0
 var consonantCount = 0
-for a in input {
-for b in vowels {
+for a in input.uppercased() {
+for b in vowels.uppercased() {
 if b == a {
 vowelCount += 1
 }
 }
-for c in consonants {
+for c in consonants.uppercased() {
 if c == a {
 consonantCount += 1
 }
